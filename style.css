@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #10131a;
+    color: white;
+}
+
+#layout {
+    display: flex;
+    height: 100vh;
+}
+
+/* LEFT PANE */
+#left-pane {
+    width: 220px;
+    background: #161a23;
+    border-right: 1px solid #333;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+#symbol-list li {
+    padding: 8px;
+    margin: 4px 0;
+    background: #222;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.symbol-buy { border-left: 5px solid #1aff45; }
+.symbol-sell { border-left: 5px solid #ff3d3d; }
+.symbol-none { border-left: 5px solid #888; }
+
+/* CENTER */
+#center-pane {
+    flex: 1;
+    padding: 10px;
+}
+
+#chart {
+    height: 80vh;
+    border: 1px solid #333;
+    margin-top: 10px;
+}
+
+/* TF buttons */
+#tf-select button {
+    margin: 4px;
+    padding: 8px 14px;
+    border: none;
+    cursor: pointer;
+    background: #222;
+    color: white;
+    border-radius: 4px;
+}
+#tf-select button:hover {
+    background: #444;
+}
+
+/* RIGHT PANE */
+#right-pane {
+    width: 350px;
+    background: #161a23;
+    border-left: 1px solid #333;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+pre {
+    background: #0e1118;
+    padding: 10px;
+    border-radius: 5px;
+    height: 200px;
+    overflow-y: auto;
+}
